@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
   Container,
+  NavbarText,
 } from 'reactstrap';
 
 const Menu = (props) => {
@@ -19,22 +20,34 @@ const Menu = (props) => {
     <div>
       <style>
         {`.menu-custom{
-            background-color: #041370;
+           
+            font-size: 20px;
+          
           }`}
       </style>
-      <Navbar className="menu-custom" dark expand="md">
+
+      <Navbar className="menu-custom" color="light" light expand="md">
         <Container>
-          <NavbarBrand href="/">Dany Code</NavbarBrand>
+          <NavbarBrand href="/">
+            <img
+              src="logo.jpg"
+              width="80  "
+              height="80"
+              className=""
+              alt="logo"
+            />
+          </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
+            <Nav className="mr-auto " navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink href="#servicos">Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/orcamento">Orçamento</NavLink>
               </NavItem>
             </Nav>
+            <NavbarText>Contato</NavbarText>
           </Collapse>
         </Container>
       </Navbar>

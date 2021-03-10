@@ -22,8 +22,8 @@ function HomePage() {
       <Jumbotron fluid className="descr-top">
         <style>
           {`.descr-top{
-              background-color:#050c3d;
-              color:#00a1fc;
+              background-color:#fff;
+              color:#0a1b7d;
               margin-bottom: 0rem !important;
             }`}
         </style>
@@ -50,7 +50,7 @@ function HomePage() {
       <Jumbotron fluid className="servicos">
         <style>
           {`.servicos{
-            background-color:#fff;
+            background-color:#e9ecef;
             margin-bottom: orem !important;
           }.circulo{
             width: 140px;
@@ -64,7 +64,7 @@ function HomePage() {
             float: none !important;
           }`}
         </style>
-        <Container className="text-center">
+        <Container className="text-center" id="servicos">
           <div>
             <h2 className="display-4">Serviços</h2>
             <p className="lead pb-4">
